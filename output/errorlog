@@ -1,0 +1,104 @@
+2021-06-20 10:27:21,821 p=59931 u=ubuntu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: master-nodes
+
+2021-06-20 10:27:21,879 p=59931 u=ubuntu n=ansible | PLAY [all] *********************************************************************
+2021-06-20 10:27:21,904 p=59931 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2021-06-20 10:27:23,877 p=59931 u=ubuntu n=ansible | ok: [18.118.86.85]
+2021-06-20 10:27:23,926 p=59931 u=ubuntu n=ansible | ok: [3.138.155.123]
+2021-06-20 10:27:23,935 p=59931 u=ubuntu n=ansible | TASK [Update packages] *********************************************************
+2021-06-20 10:27:26,491 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:26,637 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:26,645 p=59931 u=ubuntu n=ansible | TASK [Install prerequisite packages] *******************************************
+2021-06-20 10:27:27,654 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:27,994 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:28,002 p=59931 u=ubuntu n=ansible | TASK [Add GPG Key of Docker Repository] ****************************************
+2021-06-20 10:27:28,630 p=59931 u=ubuntu n=ansible | [WARNING]: Consider using the get_url or uri module rather than running 'curl'.
+If you need to use command because get_url or uri is insufficient you can add
+'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2021-06-20 10:27:28,630 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:28,766 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:28,775 p=59931 u=ubuntu n=ansible | TASK [Add Docker Repo to APT repositories] *************************************
+2021-06-20 10:27:35,192 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:35,744 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:35,753 p=59931 u=ubuntu n=ansible | TASK [Update packages with newly added docker repo] ****************************
+2021-06-20 10:27:38,111 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:38,249 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:38,257 p=59931 u=ubuntu n=ansible | TASK [Install docker] **********************************************************
+2021-06-20 10:27:39,496 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:39,740 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:39,748 p=59931 u=ubuntu n=ansible | TASK [Enable docker system service] ********************************************
+2021-06-20 10:27:40,968 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:41,168 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:41,176 p=59931 u=ubuntu n=ansible | TASK [Add user to the docker group] ********************************************
+2021-06-20 10:27:41,535 p=59931 u=ubuntu n=ansible | [WARNING]: Consider using 'become', 'become_method', and 'become_user' rather
+than running sudo
+
+2021-06-20 10:27:41,536 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:41,576 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:41,581 p=59931 u=ubuntu n=ansible | PLAY [all] *********************************************************************
+2021-06-20 10:27:41,589 p=59931 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2021-06-20 10:27:42,418 p=59931 u=ubuntu n=ansible | ok: [18.118.86.85]
+2021-06-20 10:27:42,507 p=59931 u=ubuntu n=ansible | ok: [3.138.155.123]
+2021-06-20 10:27:42,516 p=59931 u=ubuntu n=ansible | TASK [Add GPG Key of Kubernetes Repository] ************************************
+2021-06-20 10:27:43,129 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:43,178 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:43,188 p=59931 u=ubuntu n=ansible | TASK [Add Kubernetes Repo to APT repositories] *********************************
+2021-06-20 10:27:49,447 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:50,096 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:50,106 p=59931 u=ubuntu n=ansible | TASK [Update packages with newly added kubernetes repo] ************************
+2021-06-20 10:27:52,651 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:52,697 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:52,706 p=59931 u=ubuntu n=ansible | TASK [Install kubelet] *********************************************************
+2021-06-20 10:27:53,995 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:54,082 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:54,091 p=59931 u=ubuntu n=ansible | TASK [Install kubeadm] *********************************************************
+2021-06-20 10:27:54,969 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:55,059 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:55,061 p=59931 u=ubuntu n=ansible | PLAY [master-nodes] ************************************************************
+2021-06-20 10:27:55,061 p=59931 u=ubuntu n=ansible | skipping: no hosts matched
+2021-06-20 10:27:55,064 p=59931 u=ubuntu n=ansible | PLAY [master-nodes] ************************************************************
+2021-06-20 10:27:55,064 p=59931 u=ubuntu n=ansible | skipping: no hosts matched
+2021-06-20 10:27:55,065 p=59931 u=ubuntu n=ansible | PLAY [master-nodes] ************************************************************
+2021-06-20 10:27:55,065 p=59931 u=ubuntu n=ansible | skipping: no hosts matched
+2021-06-20 10:27:55,066 p=59931 u=ubuntu n=ansible | PLAY [all] *********************************************************************
+2021-06-20 10:27:55,075 p=59931 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************
+2021-06-20 10:27:56,029 p=59931 u=ubuntu n=ansible | ok: [18.118.86.85]
+2021-06-20 10:27:56,105 p=59931 u=ubuntu n=ansible | ok: [3.138.155.123]
+2021-06-20 10:27:56,113 p=59931 u=ubuntu n=ansible | TASK [Install firewalld] *******************************************************
+2021-06-20 10:27:56,977 p=59931 u=ubuntu n=ansible | [WARNING]: Consider using the apt module rather than running 'apt-get'.  If you
+need to use command because apt is insufficient you can add 'warn: false' to
+this command task or set 'command_warnings=False' in ansible.cfg to get rid of
+this message.
+
+2021-06-20 10:27:56,977 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:57,033 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:57,042 p=59931 u=ubuntu n=ansible | TASK [Enable firewalld service] ************************************************
+2021-06-20 10:27:57,948 p=59931 u=ubuntu n=ansible | ok: [18.118.86.85]
+2021-06-20 10:27:57,964 p=59931 u=ubuntu n=ansible | ok: [3.138.155.123]
+2021-06-20 10:27:57,973 p=59931 u=ubuntu n=ansible | TASK [Configure firewalld] *****************************************************
+2021-06-20 10:27:58,766 p=59931 u=ubuntu n=ansible | ok: [18.118.86.85] => (item=6443/tcp)
+2021-06-20 10:27:58,848 p=59931 u=ubuntu n=ansible | ok: [3.138.155.123] => (item=6443/tcp)
+2021-06-20 10:27:59,297 p=59931 u=ubuntu n=ansible | ok: [18.118.86.85] => (item=10250/tcp)
+2021-06-20 10:27:59,402 p=59931 u=ubuntu n=ansible | ok: [3.138.155.123] => (item=10250/tcp)
+2021-06-20 10:27:59,412 p=59931 u=ubuntu n=ansible | TASK [Enable IPTables bridge] **************************************************
+2021-06-20 10:27:59,762 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:27:59,793 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:27:59,801 p=59931 u=ubuntu n=ansible | TASK [Install fail2ban] ********************************************************
+2021-06-20 10:28:00,606 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:28:00,801 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:28:00,809 p=59931 u=ubuntu n=ansible | TASK [Enable fail2ban service] *************************************************
+2021-06-20 10:28:01,405 p=59931 u=ubuntu n=ansible | ok: [18.118.86.85]
+2021-06-20 10:28:01,444 p=59931 u=ubuntu n=ansible | ok: [3.138.155.123]
+2021-06-20 10:28:01,453 p=59931 u=ubuntu n=ansible | TASK [Disallow Root SSH Login] *************************************************
+2021-06-20 10:28:01,945 p=59931 u=ubuntu n=ansible | ok: [18.118.86.85]
+2021-06-20 10:28:01,982 p=59931 u=ubuntu n=ansible | ok: [3.138.155.123]
+2021-06-20 10:28:01,990 p=59931 u=ubuntu n=ansible | TASK [Disallow SSH Password Authentication] ************************************
+2021-06-20 10:28:02,366 p=59931 u=ubuntu n=ansible | ok: [3.138.155.123]
+2021-06-20 10:28:02,369 p=59931 u=ubuntu n=ansible | ok: [18.118.86.85]
+2021-06-20 10:28:02,378 p=59931 u=ubuntu n=ansible | TASK [Restart SSH] *************************************************************
+2021-06-20 10:28:03,048 p=59931 u=ubuntu n=ansible | changed: [18.118.86.85]
+2021-06-20 10:28:03,086 p=59931 u=ubuntu n=ansible | changed: [3.138.155.123]
+2021-06-20 10:28:03,087 p=59931 u=ubuntu n=ansible | PLAY RECAP *********************************************************************
+2021-06-20 10:28:03,088 p=59931 u=ubuntu n=ansible | 18.118.86.85               : ok=25   changed=17   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-06-20 10:28:03,088 p=59931 u=ubuntu n=ansible | 3.138.155.123              : ok=25   changed=17   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
