@@ -1,0 +1,4 @@
+- import_playbook: docker.yaml
+- import_playbook: kube-config.yaml
+- import_playbook: slave-node.yaml
+- import_playbook: hardening.yaml
